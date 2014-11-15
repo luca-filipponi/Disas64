@@ -1,0 +1,958 @@
+Eseguibile test1
+Macro di debug definita
+Calling initialization function
+Funzione di inizializzazione della memoria reattiva
+Inizio funzione rm_init():
+Nome dell'eseguibile : ./test 
+File elf size: 18493 byte
+Lettura dell'elf riuscita
+Elf type elf object 
+Itero attraverso le sezioni dell'elf
+sh_size : 2424,sh_entsize 24
+Simboli : 101
+sym.stvalue =  0000000000400ea0 
+sym.stvalue =  0000000000400ed0 
+sym.stvalue =  0000000000400f10 
+sym.stvalue =  0000000000400f30 
+sym.stvalue =  0000000000401bc0 
+sym.stvalue =  0000000000401be0 
+sym.stvalue =  0000000000401bd0 
+sym.stvalue =  0000000000400fb1 
+sym.stvalue =  0000000000401b30 
+sym.stvalue =  0000000000400e70 
+sym.stvalue =  0000000000400f5d 
+sym.stvalue =  0000000000401bd0 
+sym.stvalue =  0000000000400ff4 
+sym.stvalue =  0000000000400c60 
+******************************Valore contenuti nel jmp_array******************************************* 
+Posizione : 0 Address : 0x400ea0 
+Posizione : 1 Address : 0x400ed0 
+Posizione : 2 Address : 0x400f10 
+Posizione : 3 Address : 0x400f30 
+Posizione : 4 Address : 0x401bc0 
+Posizione : 5 Address : 0x401be0 
+Posizione : 6 Address : 0x401bd0 
+Posizione : 7 Address : 0x400fb1 
+Posizione : 8 Address : 0x401b30 
+Posizione : 9 Address : 0x400e70 
+Posizione : 10 Address : 0x400f5d 
+Posizione : 11 Address : 0x401bd0 
+Posizione : 12 Address : 0x400ff4 
+Posizione : 13 Address : 0x400c60 
+Creazione del funct array dal jmp array
+***************************funct_array******************************
+Indice: 0, Indirizzo: 0x400c60 
+Indice: 1, Indirizzo: 0x400e70 
+Indice: 2, Indirizzo: 0x400ea0 
+Indice: 3, Indirizzo: 0x400ed0 
+Indice: 4, Indirizzo: 0x400f10 
+Indice: 5, Indirizzo: 0x400f30 
+Indice: 6, Indirizzo: 0x400f5d 
+Indice: 7, Indirizzo: 0x400fb1 
+Indice: 8, Indirizzo: 0x400ff4 
+Indice: 9, Indirizzo: 0x401b30 
+Indice: 10, Indirizzo: 0x401bc0 
+Indice: 11, Indirizzo: 0x401bd0 
+Indice: 12, Indirizzo: 0x401be0 
+Indice: 13, Indirizzo: 0x401be9 
+Valore func_array->len: 13Posizione : 0 Address : 0x400c60 lunghezzaBuffer : 528 start: 0x400c60 end 0x400e70 
+diStorm version: 3.3.0
+400c60 (04) 4883ec08                 SUB RSP, 0x8
+400c64 (07) 488b058d232000           MOV RAX, [RIP+0x20238d]
+400c6b (03) 4885c0                   TEST RAX, RAX
+400c6e (02) 7405                     JZ 0x15
+400c70 (05) e81b010000               CALL 0x130
+400c75 (04) 4883c408                 ADD RSP, 0x8
+400c79 (01) c3                       RET
+400c7a (02) 0000                     ADD [RAX], AL
+400c7c (02) 0000                     ADD [RAX], AL
+400c7e (02) 0000                     ADD [RAX], AL
+400c80 (06) ff3582232000             PUSH QWORD [RIP+0x202382]
+400c86 (06) ff2584232000             JMP QWORD [RIP+0x202384]
+400c8c (04) 0f1f4000                 NOP DWORD [RAX+0x0]
+400c90 (06) ff2582232000             JMP QWORD [RIP+0x202382]
+400c96 (05) 6800000000               PUSH QWORD 0x0
+400c9b (05) e9e0ffffff               JMP 0x20
+400ca0 (06) ff257a232000             JMP QWORD [RIP+0x20237a]
+400ca6 (05) 6801000000               PUSH QWORD 0x1
+400cab (05) e9d0ffffff               JMP 0x20
+400cb0 (06) ff2572232000             JMP QWORD [RIP+0x202372]
+400cb6 (05) 6802000000               PUSH QWORD 0x2
+400cbb (05) e9c0ffffff               JMP 0x20
+400cc0 (06) ff256a232000             JMP QWORD [RIP+0x20236a]
+400cc6 (05) 6803000000               PUSH QWORD 0x3
+400ccb (05) e9b0ffffff               JMP 0x20
+400cd0 (06) ff2562232000             JMP QWORD [RIP+0x202362]
+400cd6 (05) 6804000000               PUSH QWORD 0x4
+400cdb (05) e9a0ffffff               JMP 0x20
+400ce0 (06) ff255a232000             JMP QWORD [RIP+0x20235a]
+400ce6 (05) 6805000000               PUSH QWORD 0x5
+400ceb (05) e990ffffff               JMP 0x20
+400cf0 (06) ff2552232000             JMP QWORD [RIP+0x202352]
+400cf6 (05) 6806000000               PUSH QWORD 0x6
+400cfb (05) e980ffffff               JMP 0x20
+400d00 (06) ff254a232000             JMP QWORD [RIP+0x20234a]
+400d06 (05) 6807000000               PUSH QWORD 0x7
+400d0b (05) e970ffffff               JMP 0x20
+400d10 (06) ff2542232000             JMP QWORD [RIP+0x202342]
+400d16 (05) 6808000000               PUSH QWORD 0x8
+400d1b (05) e960ffffff               JMP 0x20
+400d20 (06) ff253a232000             JMP QWORD [RIP+0x20233a]
+400d26 (05) 6809000000               PUSH QWORD 0x9
+400d2b (05) e950ffffff               JMP 0x20
+400d30 (06) ff2532232000             JMP QWORD [RIP+0x202332]
+400d36 (05) 680a000000               PUSH QWORD 0xa
+400d3b (05) e940ffffff               JMP 0x20
+400d40 (06) ff252a232000             JMP QWORD [RIP+0x20232a]
+400d46 (05) 680b000000               PUSH QWORD 0xb
+400d4b (05) e930ffffff               JMP 0x20
+400d50 (06) ff2522232000             JMP QWORD [RIP+0x202322]
+400d56 (05) 680c000000               PUSH QWORD 0xc
+400d5b (05) e920ffffff               JMP 0x20
+400d60 (06) ff251a232000             JMP QWORD [RIP+0x20231a]
+400d66 (05) 680d000000               PUSH QWORD 0xd
+400d6b (05) e910ffffff               JMP 0x20
+400d70 (06) ff2512232000             JMP QWORD [RIP+0x202312]
+400d76 (05) 680e000000               PUSH QWORD 0xe
+400d7b (05) e900ffffff               JMP 0x20
+400d80 (06) ff250a232000             JMP QWORD [RIP+0x20230a]
+400d86 (05) 680f000000               PUSH QWORD 0xf
+400d8b (05) e9f0feffff               JMP 0x20
+400d90 (06) ff2502232000             JMP QWORD [RIP+0x202302]
+400d96 (05) 6810000000               PUSH QWORD 0x10
+400d9b (05) e9e0feffff               JMP 0x20
+400da0 (06) ff25fa222000             JMP QWORD [RIP+0x2022fa]
+400da6 (05) 6811000000               PUSH QWORD 0x11
+400dab (05) e9d0feffff               JMP 0x20
+400db0 (06) ff25f2222000             JMP QWORD [RIP+0x2022f2]
+400db6 (05) 6812000000               PUSH QWORD 0x12
+400dbb (05) e9c0feffff               JMP 0x20
+400dc0 (06) ff25ea222000             JMP QWORD [RIP+0x2022ea]
+400dc6 (05) 6813000000               PUSH QWORD 0x13
+400dcb (05) e9b0feffff               JMP 0x20
+400dd0 (06) ff25e2222000             JMP QWORD [RIP+0x2022e2]
+400dd6 (05) 6814000000               PUSH QWORD 0x14
+400ddb (05) e9a0feffff               JMP 0x20
+400de0 (06) ff25da222000             JMP QWORD [RIP+0x2022da]
+400de6 (05) 6815000000               PUSH QWORD 0x15
+400deb (05) e990feffff               JMP 0x20
+400df0 (06) ff25d2222000             JMP QWORD [RIP+0x2022d2]
+400df6 (05) 6816000000               PUSH QWORD 0x16
+400dfb (05) e980feffff               JMP 0x20
+400e00 (06) ff25ca222000             JMP QWORD [RIP+0x2022ca]
+400e06 (05) 6817000000               PUSH QWORD 0x17
+400e0b (05) e970feffff               JMP 0x20
+400e10 (06) ff25c2222000             JMP QWORD [RIP+0x2022c2]
+400e16 (05) 6818000000               PUSH QWORD 0x18
+400e1b (05) e960feffff               JMP 0x20
+400e20 (06) ff25ba222000             JMP QWORD [RIP+0x2022ba]
+400e26 (05) 6819000000               PUSH QWORD 0x19
+400e2b (05) e950feffff               JMP 0x20
+400e30 (06) ff25b2222000             JMP QWORD [RIP+0x2022b2]
+400e36 (05) 681a000000               PUSH QWORD 0x1a
+400e3b (05) e940feffff               JMP 0x20
+400e40 (06) ff25aa222000             JMP QWORD [RIP+0x2022aa]
+400e46 (05) 681b000000               PUSH QWORD 0x1b
+400e4b (05) e930feffff               JMP 0x20
+400e50 (06) ff25a2222000             JMP QWORD [RIP+0x2022a2]
+400e56 (05) 681c000000               PUSH QWORD 0x1c
+400e5b (05) e920feffff               JMP 0x20
+400e60 (06) ff259a222000             JMP QWORD [RIP+0x20229a]
+400e66 (05) 681d000000               PUSH QWORD 0x1d
+400e6b (05) e910feffff               JMP 0x20
+Valore func_array->len: 13Posizione : 1 Address : 0x400e70 lunghezzaBuffer : 48 start: 0x400e70 end 0x400ea0 
+diStorm version: 3.3.0
+400e70 (02) 31ed                     XOR EBP, EBP
+400e72 (03) 4989d1                   MOV R9, RDX
+400e75 (01) 5e                       POP RSI
+400e76 (03) 4889e2                   MOV RDX, RSP
+400e79 (04) 4883e4f0                 AND RSP, -0x10
+400e7d (01) 50                       PUSH RAX
+400e7e (01) 54                       PUSH RSP
+400e7f (07) 49c7c0c01b4000           MOV R8, 0x401bc0
+400e86 (07) 48c7c1301b4000           MOV RCX, 0x401b30
+400e8d (07) 48c7c75d0f4000           MOV RDI, 0x400f5d
+400e94 (05) e8c7feffff               CALL 0xfffffffffffffef0
+400e99 (01) f4                       HLT
+400e9a (06) 660f1f440000             NOP WORD [RAX+RAX+0x0]
+Valore func_array->len: 13Posizione : 2 Address : 0x400ea0 lunghezzaBuffer : 48 start: 0x400ea0 end 0x400ed0 
+diStorm version: 3.3.0
+400ea0 (05) b81f316000               MOV EAX, 0x60311f
+400ea5 (01) 55                       PUSH RBP
+400ea6 (06) 482d18316000             SUB RAX, 0x603118
+400eac (04) 4883f80e                 CMP RAX, 0xe
+400eb0 (03) 4889e5                   MOV RBP, RSP
+400eb3 (02) 7702                     JA 0x17
+400eb5 (01) 5d                       POP RBP
+400eb6 (01) c3                       RET
+400eb7 (05) b800000000               MOV EAX, 0x0
+400ebc (03) 4885c0                   TEST RAX, RAX
+400ebf (02) 74f4                     JZ 0x15
+400ec1 (01) 5d                       POP RBP
+400ec2 (05) bf18316000               MOV EDI, 0x603118
+400ec7 (02) ffe0                     JMP RAX
+400ec9 (07) 0f1f8000000000           NOP DWORD [RAX+0x0]
+Valore func_array->len: 13Posizione : 3 Address : 0x400ed0 lunghezzaBuffer : 64 start: 0x400ed0 end 0x400f10 
+diStorm version: 3.3.0
+400ed0 (05) b818316000               MOV EAX, 0x603118
+400ed5 (01) 55                       PUSH RBP
+400ed6 (06) 482d18316000             SUB RAX, 0x603118
+400edc (04) 48c1f803                 SAR RAX, 0x3
+400ee0 (03) 4889e5                   MOV RBP, RSP
+400ee3 (03) 4889c2                   MOV RDX, RAX
+400ee6 (04) 48c1ea3f                 SHR RDX, 0x3f
+400eea (03) 4801d0                   ADD RAX, RDX
+400eed (03) 48d1f8                   SAR RAX, 0x1
+400ef0 (02) 7502                     JNZ 0x24
+400ef2 (01) 5d                       POP RBP
+400ef3 (01) c3                       RET
+400ef4 (05) ba00000000               MOV EDX, 0x0
+400ef9 (03) 4885d2                   TEST RDX, RDX
+400efc (02) 74f4                     JZ 0x22
+400efe (01) 5d                       POP RBP
+400eff (03) 4889c6                   MOV RSI, RAX
+400f02 (05) bf18316000               MOV EDI, 0x603118
+400f07 (02) ffe2                     JMP RDX
+400f09 (07) 0f1f8000000000           NOP DWORD [RAX+0x0]
+Valore func_array->len: 13Posizione : 4 Address : 0x400f10 lunghezzaBuffer : 32 start: 0x400f10 end 0x400f30 
+diStorm version: 3.3.0
+400f10 (07) 803d0922200000           CMP BYTE [RIP+0x202209], 0x0
+400f17 (02) 7511                     JNZ 0x1a
+400f19 (01) 55                       PUSH RBP
+400f1a (03) 4889e5                   MOV RBP, RSP
+400f1d (05) e87effffff               CALL 0xffffffffffffff90
+400f22 (01) 5d                       POP RBP
+400f23 (07) c605f621200001           MOV BYTE [RIP+0x2021f6], 0x1
+400f2a (02) f3c3                     RET
+400f2c (04) 0f1f4000                 NOP DWORD [RAX+0x0]
+Valore func_array->len: 13Posizione : 5 Address : 0x400f30 lunghezzaBuffer : 45 start: 0x400f30 end 0x400f5d 
+diStorm version: 3.3.0
+400f30 (08) 48833db81e200000         CMP QWORD [RIP+0x201eb8], 0x0
+400f38 (02) 741e                     JZ 0x28
+400f3a (05) b800000000               MOV EAX, 0x0
+400f3f (03) 4885c0                   TEST RAX, RAX
+400f42 (02) 7414                     JZ 0x28
+400f44 (01) 55                       PUSH RBP
+400f45 (05) bff02d6000               MOV EDI, 0x602df0
+400f4a (03) 4889e5                   MOV RBP, RSP
+400f4d (02) ffd0                     CALL RAX
+400f4f (01) 5d                       POP RBP
+400f50 (05) e97bffffff               JMP 0xffffffffffffffa0
+400f55 (03) 0f1f00                   NOP DWORD [RAX]
+400f58 (05) e973ffffff               JMP 0xffffffffffffffa0
+Valore func_array->len: 13Posizione : 6 Address : 0x400f5d lunghezzaBuffer : 84 start: 0x400f5d end 0x400fb1 
+diStorm version: 3.3.0
+400f5d (01) 55                       PUSH RBP
+400f5e (03) 4889e5                   MOV RBP, RSP
+400f61 (04) 4883ec10                 SUB RSP, 0x10
+400f65 (05) bff81b4000               MOV EDI, 0x401bf8
+400f6a (05) e851fdffff               CALL 0xfffffffffffffd63
+400f6f (05) bf091c4000               MOV EDI, 0x401c09
+400f74 (05) e847fdffff               CALL 0xfffffffffffffd63
+400f79 (05) bf281c4000               MOV EDI, 0x401c28
+400f7e (05) e83dfdffff               CALL 0xfffffffffffffd63
+400f83 (05) be05000000               MOV ESI, 0x5
+400f88 (05) bf02000000               MOV EDI, 0x2
+400f8d (05) b800000000               MOV EAX, 0x0
+400f92 (05) e85d000000               CALL 0x97
+400f97 (05) bf04000000               MOV EDI, 0x4
+400f9c (05) e81ffeffff               CALL 0xfffffffffffffe63
+400fa1 (04) 488945f8                 MOV [RBP-0x8], RAX
+400fa5 (04) 488b45f8                 MOV RAX, [RBP-0x8]
+400fa9 (06) c70005000000             MOV DWORD [RAX], 0x5
+400faf (01) c9                       LEAVE
+400fb0 (01) c3                       RET
+Valore func_array->len: 13Posizione : 7 Address : 0x400fb1 lunghezzaBuffer : 67 start: 0x400fb1 end 0x400ff4 
+diStorm version: 3.3.0
+400fb1 (01) 55                       PUSH RBP
+400fb2 (03) 4889e5                   MOV RBP, RSP
+400fb5 (04) 48897de8                 MOV [RBP-0x18], RDI
+400fb9 (04) 488975e0                 MOV [RBP-0x20], RSI
+400fbd (04) 488b45e8                 MOV RAX, [RBP-0x18]
+400fc1 (02) 8b00                     MOV EAX, [RAX]
+400fc3 (03) 8945f8                   MOV [RBP-0x8], EAX
+400fc6 (04) 488b45e0                 MOV RAX, [RBP-0x20]
+400fca (02) 8b00                     MOV EAX, [RAX]
+400fcc (03) 8945fc                   MOV [RBP-0x4], EAX
+400fcf (03) 8b45f8                   MOV EAX, [RBP-0x8]
+400fd2 (03) 3b45fc                   CMP EAX, [RBP-0x4]
+400fd5 (02) 7307                     JAE 0x2d
+400fd7 (05) b8ffffffff               MOV EAX, 0xffffffffffffffff
+400fdc (02) eb14                     JMP 0x41
+400fde (03) 8b45f8                   MOV EAX, [RBP-0x8]
+400fe1 (03) 3b45fc                   CMP EAX, [RBP-0x4]
+400fe4 (02) 7607                     JBE 0x3c
+400fe6 (05) b801000000               MOV EAX, 0x1
+400feb (02) eb05                     JMP 0x41
+400fed (05) b800000000               MOV EAX, 0x0
+400ff2 (01) 5d                       POP RBP
+400ff3 (01) c3                       RET
+Valore func_array->len: 13Posizione : 8 Address : 0x400ff4 lunghezzaBuffer : 2876 start: 0x400ff4 end 0x401b30 
+diStorm version: 3.3.0
+400ff4 (01) 55                       PUSH RBP
+400ff5 (03) 4889e5                   MOV RBP, RSP
+400ff8 (01) 53                       PUSH RBX
+400ff9 (07) 4881ecb8920200           SUB RSP, 0x292b8
+401000 (09) 64488b042528000000       MOV RAX, [FS:0x28]
+401009 (04) 488945e8                 MOV [RBP-0x18], RAX
+40100d (02) 31c0                     XOR EAX, EAX
+40100f (05) bf481c4000               MOV EDI, 0x401c48
+401014 (05) e8a7fcffff               CALL 0xfffffffffffffccc
+401019 (10) c785546dfdff00000000     MOV DWORD [RBP-0x292ac], 0x0
+401023 (05) be7c1c4000               MOV ESI, 0x401c7c
+401028 (05) bf7e1c4000               MOV EDI, 0x401c7e
+40102d (05) e8fefdffff               CALL 0xfffffffffffffe3c
+401032 (07) 488985b06dfdff           MOV [RBP-0x29250], RAX
+401039 (07) 488d95e0feffff           LEA RDX, [RBP-0x120]
+401040 (06) 8b85546dfdff             MOV EAX, [RBP-0x292ac]
+401046 (02) 4898                     CDQE
+401048 (03) 4801c2                   ADD RDX, RAX
+40104b (07) 488b85b06dfdff           MOV RAX, [RBP-0x29250]
+401052 (05) be911c4000               MOV ESI, 0x401c91
+401057 (03) 4889c7                   MOV RDI, RAX
+40105a (05) b800000000               MOV EAX, 0x0
+40105f (05) e84cfcffff               CALL 0xfffffffffffffcbc
+401064 (02) eb32                     JMP 0xa4
+401066 (07) 8385546dfdff01           ADD DWORD [RBP-0x292ac], 0x1
+40106d (07) 488d95e0feffff           LEA RDX, [RBP-0x120]
+401074 (06) 8b85546dfdff             MOV EAX, [RBP-0x292ac]
+40107a (02) 4898                     CDQE
+40107c (03) 4801c2                   ADD RDX, RAX
+40107f (07) 488b85b06dfdff           MOV RAX, [RBP-0x29250]
+401086 (05) be911c4000               MOV ESI, 0x401c91
+40108b (03) 4889c7                   MOV RDI, RAX
+40108e (05) b800000000               MOV EAX, 0x0
+401093 (05) e818fcffff               CALL 0xfffffffffffffcbc
+401098 (07) 488b85b06dfdff           MOV RAX, [RBP-0x29250]
+40109f (03) 4889c7                   MOV RDI, RAX
+4010a2 (05) e8d9fcffff               CALL 0xfffffffffffffd8c
+4010a7 (02) 85c0                     TEST EAX, EAX
+4010a9 (02) 7514                     JNZ 0xcb
+4010ab (06) 8b85546dfdff             MOV EAX, [RBP-0x292ac]
+4010b1 (02) 4898                     CDQE
+4010b3 (08) 0fb68405e0feffff         MOVZX EAX, BYTE [RBP+RAX-0x120]
+4010bb (02) 84c0                     TEST AL, AL
+4010bd (02) 75a7                     JNZ 0x72
+4010bf (07) 488b85b06dfdff           MOV RAX, [RBP-0x29250]
+4010c6 (03) 4889c7                   MOV RDI, RAX
+4010c9 (05) e802fcffff               CALL 0xfffffffffffffcdc
+4010ce (05) bf941c4000               MOV EDI, 0x401c94
+4010d3 (05) e8e8fbffff               CALL 0xfffffffffffffccc
+4010d8 (07) 488d85e0feffff           LEA RAX, [RBP-0x120]
+4010df (03) 4889c6                   MOV RSI, RAX
+4010e2 (05) bfaf1c4000               MOV EDI, 0x401caf
+4010e7 (05) b800000000               MOV EAX, 0x0
+4010ec (05) e8fffbffff               CALL 0xfffffffffffffcfc
+4010f1 (07) 488b85b86dfdff           MOV RAX, [RBP-0x29248]
+4010f8 (07) 488985c06dfdff           MOV [RBP-0x29240], RAX
+4010ff (11) 48c785806dfdffe91b4000   MOV QWORD [RBP-0x29280], 0x401be9
+40110a (10) c785606dfdff00000000     MOV DWORD [RBP-0x292a0], 0x0
+401114 (05) ba08000000               MOV EDX, 0x8
+401119 (05) be00000000               MOV ESI, 0x0
+40111e (05) bf00000000               MOV EDI, 0x0
+401123 (05) e8e8fbffff               CALL 0xfffffffffffffd1c
+401128 (07) 48890501202000           MOV [RIP+0x202001], RAX
+40112f (05) ba08000000               MOV EDX, 0x8
+401134 (05) be00000000               MOV ESI, 0x0
+401139 (05) bf00000000               MOV EDI, 0x0
+40113e (05) e8cdfbffff               CALL 0xfffffffffffffd1c
+401143 (07) 488905de1f2000           MOV [RIP+0x201fde], RAX
+40114a (05) bf01000000               MOV EDI, 0x1
+40114f (05) e84cfbffff               CALL 0xfffffffffffffcac
+401154 (02) 85c0                     TEST EAX, EAX
+401156 (02) 750f                     JNZ 0x173
+401158 (05) bfd01c4000               MOV EDI, 0x401cd0
+40115d (05) e85efbffff               CALL 0xfffffffffffffccc
+401162 (05) e9a0090000               JMP 0xb13
+401167 (07) 488d85e0feffff           LEA RAX, [RBP-0x120]
+40116e (05) ba00000000               MOV EDX, 0x0
+401173 (05) be00000000               MOV ESI, 0x0
+401178 (03) 4889c7                   MOV RDI, RAX
+40117b (05) b800000000               MOV EAX, 0x0
+401180 (05) e89bfcffff               CALL 0xfffffffffffffe2c
+401185 (06) 8985646dfdff             MOV [RBP-0x2929c], EAX
+40118b (07) 83bd646dfdff00           CMP DWORD [RBP-0x2929c], 0x0
+401192 (02) 790f                     JNS 0x1af
+401194 (05) bff31c4000               MOV EDI, 0x401cf3
+401199 (05) e822fbffff               CALL 0xfffffffffffffccc
+40119e (05) e964090000               JMP 0xb13
+4011a3 (07) 488d95106efdff           LEA RDX, [RBP-0x291f0]
+4011aa (06) 8b85646dfdff             MOV EAX, [RBP-0x2929c]
+4011b0 (03) 4889d6                   MOV RSI, RDX
+4011b3 (02) 89c7                     MOV EDI, EAX
+4011b5 (05) e8160a0000               CALL 0xbdc
+4011ba (02) 85c0                     TEST EAX, EAX
+4011bc (02) 7430                     JZ 0x1fa
+4011be (07) 488d85e0feffff           LEA RAX, [RBP-0x120]
+4011c5 (03) 4889c6                   MOV RSI, RAX
+4011c8 (05) bf041d4000               MOV EDI, 0x401d04
+4011cd (05) b800000000               MOV EAX, 0x0
+4011d2 (05) e819fbffff               CALL 0xfffffffffffffcfc
+4011d7 (06) 8b85646dfdff             MOV EAX, [RBP-0x2929c]
+4011dd (02) 89c7                     MOV EDI, EAX
+4011df (05) b800000000               MOV EAX, 0x0
+4011e4 (05) e837fbffff               CALL 0xfffffffffffffd2c
+4011e9 (05) e919090000               JMP 0xb13
+4011ee (07) 488b85406efdff           MOV RAX, [RBP-0x291c0]
+4011f5 (03) 4889c7                   MOV RDI, RAX
+4011f8 (05) e8c3fbffff               CALL 0xfffffffffffffdcc
+4011fd (07) 488985b86dfdff           MOV [RBP-0x29248], RAX
+401204 (08) 4883bdb86dfdff00         CMP QWORD [RBP-0x29248], 0x0
+40120c (02) 750f                     JNZ 0x229
+40120e (05) bf1a1d4000               MOV EDI, 0x401d1a
+401213 (05) e8a8faffff               CALL 0xfffffffffffffccc
+401218 (05) e9ea080000               JMP 0xb13
+40121d (07) 488b85406efdff           MOV RAX, [RBP-0x291c0]
+401224 (03) 4889c6                   MOV RSI, RAX
+401227 (05) bf381d4000               MOV EDI, 0x401d38
+40122c (05) b800000000               MOV EAX, 0x0
+401231 (05) e8bafaffff               CALL 0xfffffffffffffcfc
+401236 (07) 488b95406efdff           MOV RDX, [RBP-0x291c0]
+40123d (07) 488b8db86dfdff           MOV RCX, [RBP-0x29248]
+401244 (06) 8b85646dfdff             MOV EAX, [RBP-0x2929c]
+40124a (03) 4889ce                   MOV RSI, RCX
+40124d (02) 89c7                     MOV EDI, EAX
+40124f (05) b800000000               MOV EAX, 0x0
+401254 (05) e8f7faffff               CALL 0xfffffffffffffd5c
+401259 (03) 4863d0                   MOVSXD RDX, EAX
+40125c (07) 488b85406efdff           MOV RAX, [RBP-0x291c0]
+401263 (03) 4839c2                   CMP RDX, RAX
+401266 (02) 7d3f                     JGE 0x2b3
+401268 (07) 488d85e0feffff           LEA RAX, [RBP-0x120]
+40126f (03) 4889c6                   MOV RSI, RAX
+401272 (05) bf501d4000               MOV EDI, 0x401d50
+401277 (05) b800000000               MOV EAX, 0x0
+40127c (05) e86ffaffff               CALL 0xfffffffffffffcfc
+401281 (07) 488b85b86dfdff           MOV RAX, [RBP-0x29248]
+401288 (03) 4889c7                   MOV RDI, RAX
+40128b (05) e800faffff               CALL 0xfffffffffffffc9c
+401290 (06) 8b85646dfdff             MOV EAX, [RBP-0x2929c]
+401296 (02) 89c7                     MOV EDI, EAX
+401298 (05) b800000000               MOV EAX, 0x0
+40129d (05) e87efaffff               CALL 0xfffffffffffffd2c
+4012a2 (05) e960080000               JMP 0xb13
+4012a7 (05) bf6e1d4000               MOV EDI, 0x401d6e
+4012ac (05) e80ffaffff               CALL 0xfffffffffffffccc
+4012b1 (06) 8b85646dfdff             MOV EAX, [RBP-0x2929c]
+4012b7 (05) ba00000000               MOV EDX, 0x0
+4012bc (05) be01000000               MOV ESI, 0x1
+4012c1 (02) 89c7                     MOV EDI, EAX
+4012c3 (05) e818fbffff               CALL 0xfffffffffffffdec
+4012c8 (07) 488985c86dfdff           MOV [RBP-0x29238], RAX
+4012cf (08) 4883bdc86dfdff00         CMP QWORD [RBP-0x29238], 0x0
+4012d7 (02) 750f                     JNZ 0x2f4
+4012d9 (05) bf881d4000               MOV EDI, 0x401d88
+4012de (05) e8ddf9ffff               CALL 0xfffffffffffffccc
+4012e3 (05) e91f080000               JMP 0xb13
+4012e8 (07) 488b85c86dfdff           MOV RAX, [RBP-0x29238]
+4012ef (03) 4889c7                   MOV RDI, RAX
+4012f2 (05) e869fbffff               CALL 0xfffffffffffffe6c
+4012f7 (06) 8985686dfdff             MOV [RBP-0x29298], EAX
+4012fd (06) 8b85686dfdff             MOV EAX, [RBP-0x29298]
+401303 (03) 83f801                   CMP EAX, 0x1
+401306 (02) 740c                     JZ 0x320
+401308 (03) 83f801                   CMP EAX, 0x1
+40130b (02) 7221                     JB 0x33a
+40130d (03) 83f803                   CMP EAX, 0x3
+401310 (02) 740f                     JZ 0x32d
+401312 (02) eb27                     JMP 0x347
+401314 (11) 48c785886dfdff9b1d4000   MOV QWORD [RBP-0x29278], 0x401d9b
+40131f (02) eb25                     JMP 0x352
+401321 (11) 48c785886dfdffa91d4000   MOV QWORD [RBP-0x29278], 0x401da9
+40132c (02) eb18                     JMP 0x352
+40132e (11) 48c785886dfdffb41d4000   MOV QWORD [RBP-0x29278], 0x401db4
+401339 (02) eb0b                     JMP 0x352
+40133b (11) 48c785886dfdffb91d4000   MOV QWORD [RBP-0x29278], 0x401db9
+401346 (07) 488b85886dfdff           MOV RAX, [RBP-0x29278]
+40134d (03) 4889c6                   MOV RSI, RAX
+401350 (05) bfc61d4000               MOV EDI, 0x401dc6
+401355 (05) b800000000               MOV EAX, 0x0
+40135a (05) e891f9ffff               CALL 0xfffffffffffffcfc
+40135f (05) bfd81d4000               MOV EDI, 0x401dd8
+401364 (05) e857f9ffff               CALL 0xfffffffffffffccc
+401369 (05) e948010000               JMP 0x4c2
+40136e (07) 488b85906dfdff           MOV RAX, [RBP-0x29270]
+401375 (03) 4889c7                   MOV RDI, RAX
+401378 (05) e8b3f9ffff               CALL 0xfffffffffffffd3c
+40137d (07) 488985d06dfdff           MOV [RBP-0x29230], RAX
+401384 (07) 488b85d06dfdff           MOV RAX, [RBP-0x29230]
+40138b (03) 8b4004                   MOV EAX, [RAX+0x4]
+40138e (03) 83f802                   CMP EAX, 0x2
+401391 (06) 0f851f010000             JNZ 0x4c2
+401397 (07) 488b95986dfdff           MOV RDX, [RBP-0x29268]
+40139e (07) 488b85906dfdff           MOV RAX, [RBP-0x29270]
+4013a5 (03) 4889d6                   MOV RSI, RDX
+4013a8 (03) 4889c7                   MOV RDI, RAX
+4013ab (05) e890f9ffff               CALL 0xfffffffffffffd4c
+4013b0 (07) 488985986dfdff           MOV [RBP-0x29268], RAX
+4013b7 (07) 488b85d06dfdff           MOV RAX, [RBP-0x29230]
+4013be (04) 488b5038                 MOV RDX, [RAX+0x38]
+4013c2 (07) 488b85d06dfdff           MOV RAX, [RBP-0x29230]
+4013c9 (04) 488b4020                 MOV RAX, [RAX+0x20]
+4013cd (03) 4889c6                   MOV RSI, RAX
+4013d0 (05) bffd1d4000               MOV EDI, 0x401dfd
+4013d5 (05) b800000000               MOV EAX, 0x0
+4013da (05) e811f9ffff               CALL 0xfffffffffffffcfc
+4013df (07) 488b85d06dfdff           MOV RAX, [RBP-0x29230]
+4013e6 (04) 488b4020                 MOV RAX, [RAX+0x20]
+4013ea (07) 488b95d06dfdff           MOV RDX, [RBP-0x29230]
+4013f1 (04) 488b5a38                 MOV RBX, [RDX+0x38]
+4013f5 (05) ba00000000               MOV EDX, 0x0
+4013fa (03) 48f7f3                   DIV RBX
+4013fd (06) 89856c6dfdff             MOV [RBP-0x29294], EAX
+401403 (06) 8b856c6dfdff             MOV EAX, [RBP-0x29294]
+401409 (02) 89c6                     MOV ESI, EAX
+40140b (05) bf191e4000               MOV EDI, 0x401e19
+401410 (05) b800000000               MOV EAX, 0x0
+401415 (05) e8d6f8ffff               CALL 0xfffffffffffffcfc
+40141a (10) c785546dfdff00000000     MOV DWORD [RBP-0x292ac], 0x0
+401424 (02) eb7e                     JMP 0x4b0
+401426 (07) 488d95f06dfdff           LEA RDX, [RBP-0x29210]
+40142d (06) 8b8d546dfdff             MOV ECX, [RBP-0x292ac]
+401433 (07) 488b85986dfdff           MOV RAX, [RBP-0x29268]
+40143a (02) 89ce                     MOV ESI, ECX
+40143c (03) 4889c7                   MOV RDI, RAX
+40143f (05) e8bcf8ffff               CALL 0xfffffffffffffd0c
+401444 (07) 0fb685f46dfdff           MOVZX EAX, BYTE [RBP-0x2920c]
+40144b (03) 0fb6c0                   MOVZX EAX, AL
+40144e (03) 83e00f                   AND EAX, 0xf
+401451 (03) 83f802                   CMP EAX, 0x2
+401454 (02) 7547                     JNZ 0x4a9
+401456 (07) 488b85f86dfdff           MOV RAX, [RBP-0x29208]
+40145d (03) 4885c0                   TEST RAX, RAX
+401460 (02) 743b                     JZ 0x4a9
+401462 (07) 488b85f86dfdff           MOV RAX, [RBP-0x29208]
+401469 (03) 4889c6                   MOV RSI, RAX
+40146c (05) bf271e4000               MOV EDI, 0x401e27
+401471 (05) b800000000               MOV EAX, 0x0
+401476 (05) e875f8ffff               CALL 0xfffffffffffffcfc
+40147b (07) 488b05ae1c2000           MOV RAX, [RIP+0x201cae]
+401482 (07) 488d95f06dfdff           LEA RDX, [RBP-0x29210]
+401489 (04) 488d4a08                 LEA RCX, [RDX+0x8]
+40148d (05) ba01000000               MOV EDX, 0x1
+401492 (03) 4889ce                   MOV RSI, RCX
+401495 (03) 4889c7                   MOV RDI, RAX
+401498 (05) e813f9ffff               CALL 0xfffffffffffffdbc
+40149d (07) 8385546dfdff01           ADD DWORD [RBP-0x292ac], 0x1
+4014a4 (06) 8b85546dfdff             MOV EAX, [RBP-0x292ac]
+4014aa (06) 3b856c6dfdff             CMP EAX, [RBP-0x29294]
+4014b0 (06) 0f8c70ffffff             JL 0x432
+4014b6 (07) 488b95906dfdff           MOV RDX, [RBP-0x29270]
+4014bd (07) 488b85c86dfdff           MOV RAX, [RBP-0x29238]
+4014c4 (03) 4889d6                   MOV RSI, RDX
+4014c7 (03) 4889c7                   MOV RDI, RAX
+4014ca (05) e841f9ffff               CALL 0xfffffffffffffe1c
+4014cf (07) 488985906dfdff           MOV [RBP-0x29270], RAX
+4014d6 (08) 4883bd906dfdff00         CMP QWORD [RBP-0x29270], 0x0
+4014de (06) 0f858afeffff             JNZ 0x37a
+4014e4 (05) bf401e4000               MOV EDI, 0x401e40
+4014e9 (05) e8d2f7ffff               CALL 0xfffffffffffffccc
+4014ee (10) c785546dfdff00000000     MOV DWORD [RBP-0x292ac], 0x0
+4014f8 (02) eb3b                     JMP 0x541
+4014fa (07) 488b052f1c2000           MOV RAX, [RIP+0x201c2f]
+401501 (03) 488b00                   MOV RAX, [RAX]
+401504 (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+40150a (03) 4863d2                   MOVSXD RDX, EDX
+40150d (04) 48c1e203                 SHL RDX, 0x3
+401511 (03) 4801d0                   ADD RAX, RDX
+401514 (03) 488b10                   MOV RDX, [RAX]
+401517 (06) 8b85546dfdff             MOV EAX, [RBP-0x292ac]
+40151d (02) 89c6                     MOV ESI, EAX
+40151f (05) bfa91e4000               MOV EDI, 0x401ea9
+401524 (05) b800000000               MOV EAX, 0x0
+401529 (05) e8c2f7ffff               CALL 0xfffffffffffffcfc
+40152e (07) 8385546dfdff01           ADD DWORD [RBP-0x292ac], 0x1
+401535 (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+40153b (07) 488b05ee1b2000           MOV RAX, [RIP+0x201bee]
+401542 (03) 8b4008                   MOV EAX, [RAX+0x8]
+401545 (02) 39c2                     CMP EDX, EAX
+401547 (02) 72b1                     JB 0x506
+401549 (05) bfc81e4000               MOV EDI, 0x401ec8
+40154e (05) e86df7ffff               CALL 0xfffffffffffffccc
+401553 (07) 488b05d61b2000           MOV RAX, [RIP+0x201bd6]
+40155a (07) 488d8d806dfdff           LEA RCX, [RBP-0x29280]
+401561 (05) ba01000000               MOV EDX, 0x1
+401566 (03) 4889ce                   MOV RSI, RCX
+401569 (03) 4889c7                   MOV RDI, RAX
+40156c (05) e83ff8ffff               CALL 0xfffffffffffffdbc
+401571 (07) 488b05b81b2000           MOV RAX, [RIP+0x201bb8]
+401578 (03) 8b5008                   MOV EDX, [RAX+0x8]
+40157b (07) 488b05ae1b2000           MOV RAX, [RIP+0x201bae]
+401582 (03) 488b08                   MOV RCX, [RAX]
+401585 (07) 488b059c1b2000           MOV RAX, [RIP+0x201b9c]
+40158c (03) 4889ce                   MOV RSI, RCX
+40158f (03) 4889c7                   MOV RDI, RAX
+401592 (05) e819f8ffff               CALL 0xfffffffffffffdbc
+401597 (07) 488b058a1b2000           MOV RAX, [RIP+0x201b8a]
+40159e (05) beb10f4000               MOV ESI, 0x400fb1
+4015a3 (03) 4889c7                   MOV RDI, RAX
+4015a6 (05) e895f8ffff               CALL 0xfffffffffffffe4c
+4015ab (10) c785546dfdff01000000     MOV DWORD [RBP-0x292ac], 0x1
+4015b5 (02) eb68                     JMP 0x62b
+4015b7 (07) 488b056a1b2000           MOV RAX, [RIP+0x201b6a]
+4015be (03) 488b00                   MOV RAX, [RAX]
+4015c1 (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+4015c7 (03) 4863d2                   MOVSXD RDX, EDX
+4015ca (04) 48c1e203                 SHL RDX, 0x3
+4015ce (03) 4801d0                   ADD RAX, RDX
+4015d1 (03) 488b10                   MOV RDX, [RAX]
+4015d4 (07) 488b054d1b2000           MOV RAX, [RIP+0x201b4d]
+4015db (03) 488b00                   MOV RAX, [RAX]
+4015de (06) 8b8d546dfdff             MOV ECX, [RBP-0x292ac]
+4015e4 (03) 4863c9                   MOVSXD RCX, ECX
+4015e7 (04) 48c1e103                 SHL RCX, 0x3
+4015eb (04) 4883e908                 SUB RCX, 0x8
+4015ef (03) 4801c8                   ADD RAX, RCX
+4015f2 (03) 488b00                   MOV RAX, [RAX]
+4015f5 (03) 4839c2                   CMP RDX, RAX
+4015f8 (02) 751e                     JNZ 0x624
+4015fa (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+401600 (07) 488b05211b2000           MOV RAX, [RIP+0x201b21]
+401607 (02) 89d6                     MOV ESI, EDX
+401609 (03) 4889c7                   MOV RDI, RAX
+40160c (05) e85ff7ffff               CALL 0xfffffffffffffd7c
+401611 (07) 83ad546dfdff01           SUB DWORD [RBP-0x292ac], 0x1
+401618 (07) 8385546dfdff01           ADD DWORD [RBP-0x292ac], 0x1
+40161f (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+401625 (07) 488b05fc1a2000           MOV RAX, [RIP+0x201afc]
+40162c (03) 8b4008                   MOV EAX, [RAX+0x8]
+40162f (02) 39c2                     CMP EDX, EAX
+401631 (02) 7284                     JB 0x5c3
+401633 (05) bff01e4000               MOV EDI, 0x401ef0
+401638 (05) e883f6ffff               CALL 0xfffffffffffffccc
+40163d (10) c785546dfdff00000000     MOV DWORD [RBP-0x292ac], 0x0
+401647 (02) eb3b                     JMP 0x690
+401649 (07) 488b05d81a2000           MOV RAX, [RIP+0x201ad8]
+401650 (03) 488b00                   MOV RAX, [RAX]
+401653 (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+401659 (03) 4863d2                   MOVSXD RDX, EDX
+40165c (04) 48c1e203                 SHL RDX, 0x3
+401660 (03) 4801d0                   ADD RAX, RDX
+401663 (03) 488b10                   MOV RDX, [RAX]
+401666 (06) 8b85546dfdff             MOV EAX, [RBP-0x292ac]
+40166c (02) 89c6                     MOV ESI, EAX
+40166e (05) bf351f4000               MOV EDI, 0x401f35
+401673 (05) b800000000               MOV EAX, 0x0
+401678 (05) e873f6ffff               CALL 0xfffffffffffffcfc
+40167d (07) 8385546dfdff01           ADD DWORD [RBP-0x292ac], 0x1
+401684 (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+40168a (07) 488b05971a2000           MOV RAX, [RIP+0x201a97]
+401691 (03) 8b4008                   MOV EAX, [RAX+0x8]
+401694 (02) 39c2                     CMP EDX, EAX
+401696 (02) 72b1                     JB 0x655
+401698 (07) 488b85c86dfdff           MOV RAX, [RBP-0x29238]
+40169f (03) 4889c7                   MOV RDI, RAX
+4016a2 (05) e8f9f6ffff               CALL 0xfffffffffffffdac
+4016a7 (06) 8b85646dfdff             MOV EAX, [RBP-0x2929c]
+4016ad (02) 89c7                     MOV EDI, EAX
+4016af (05) b800000000               MOV EAX, 0x0
+4016b4 (05) e867f6ffff               CALL 0xfffffffffffffd2c
+4016b9 (10) c785706dfdff00000000     MOV DWORD [RBP-0x29290], 0x0
+4016c3 (10) c785506dfdff00000000     MOV DWORD [RBP-0x292b0], 0x0
+4016cd (10) c785746dfdff02000000     MOV DWORD [RBP-0x2928c], 0x2
+4016d7 (11) 48c785a06dfdff00000000   MOV QWORD [RBP-0x29260], 0x0
+4016e2 (11) 48c785d86dfdff00000000   MOV QWORD [RBP-0x29228], 0x0
+4016ed (10) c785546dfdff00000000     MOV DWORD [RBP-0x292ac], 0x0
+4016f7 (05) e9ef030000               JMP 0xaf7
+4016fc (07) 488b05251a2000           MOV RAX, [RIP+0x201a25]
+401703 (03) 8b4008                   MOV EAX, [RAX+0x8]
+401706 (03) 83e801                   SUB EAX, 0x1
+401709 (02) 89c6                     MOV ESI, EAX
+40170b (05) bf511f4000               MOV EDI, 0x401f51
+401710 (05) b800000000               MOV EAX, 0x0
+401715 (05) e8d6f5ffff               CALL 0xfffffffffffffcfc
+40171a (07) 488b05071a2000           MOV RAX, [RIP+0x201a07]
+401721 (03) 488b00                   MOV RAX, [RAX]
+401724 (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+40172a (03) 4863d2                   MOVSXD RDX, EDX
+40172d (04) 48c1e203                 SHL RDX, 0x3
+401731 (03) 4801d0                   ADD RAX, RDX
+401734 (03) 488b00                   MOV RAX, [RAX]
+401737 (07) 488985a86dfdff           MOV [RBP-0x29258], RAX
+40173e (07) 488b05e3192000           MOV RAX, [RIP+0x2019e3]
+401745 (03) 488b00                   MOV RAX, [RAX]
+401748 (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+40174e (03) 4863d2                   MOVSXD RDX, EDX
+401751 (04) 48c1e203                 SHL RDX, 0x3
+401755 (03) 4801d0                   ADD RAX, RDX
+401758 (03) 488b00                   MOV RAX, [RAX]
+40175b (07) 488985e06dfdff           MOV [RBP-0x29220], RAX
+401762 (07) 488b05bf192000           MOV RAX, [RIP+0x2019bf]
+401769 (03) 488b00                   MOV RAX, [RAX]
+40176c (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+401772 (03) 4863d2                   MOVSXD RDX, EDX
+401775 (04) 4883c201                 ADD RDX, 0x1
+401779 (04) 48c1e203                 SHL RDX, 0x3
+40177d (03) 4801d0                   ADD RAX, RDX
+401780 (03) 488b00                   MOV RAX, [RAX]
+401783 (07) 488985e86dfdff           MOV [RBP-0x29218], RAX
+40178a (07) 488b95e86dfdff           MOV RDX, [RBP-0x29218]
+401791 (07) 488b85e06dfdff           MOV RAX, [RBP-0x29220]
+401798 (03) 4829c2                   SUB RDX, RAX
+40179b (03) 4889d0                   MOV RAX, RDX
+40179e (06) 89855c6dfdff             MOV [RBP-0x292a4], EAX
+4017a4 (07) 488b057d192000           MOV RAX, [RIP+0x20197d]
+4017ab (03) 488b00                   MOV RAX, [RAX]
+4017ae (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+4017b4 (03) 4863d2                   MOVSXD RDX, EDX
+4017b7 (04) 48c1e203                 SHL RDX, 0x3
+4017bb (03) 4801d0                   ADD RAX, RDX
+4017be (03) 488b10                   MOV RDX, [RAX]
+4017c1 (07) 488bbde86dfdff           MOV RDI, [RBP-0x29218]
+4017c8 (07) 488bb5e06dfdff           MOV RSI, [RBP-0x29220]
+4017cf (06) 8b8d5c6dfdff             MOV ECX, [RBP-0x292a4]
+4017d5 (06) 8b85546dfdff             MOV EAX, [RBP-0x292ac]
+4017db (03) 4989f9                   MOV R9, RDI
+4017de (03) 4989f0                   MOV R8, RSI
+4017e1 (02) 89c6                     MOV ESI, EAX
+4017e3 (05) bf701f4000               MOV EDI, 0x401f70
+4017e8 (05) b800000000               MOV EAX, 0x0
+4017ed (05) e8fef4ffff               CALL 0xfffffffffffffcfc
+4017f2 (05) b800000000               MOV EAX, 0x0
+4017f7 (05) e804f6ffff               CALL 0xfffffffffffffe0c
+4017fc (06) 8985706dfdff             MOV [RBP-0x29290], EAX
+401802 (06) 8b85706dfdff             MOV EAX, [RBP-0x29290]
+401808 (03) 0fb6d0                   MOVZX EDX, AL
+40180b (06) 8b85706dfdff             MOV EAX, [RBP-0x29290]
+401811 (03) c1e808                   SHR EAX, 0x8
+401814 (03) 0fb6c0                   MOVZX EAX, AL
+401817 (06) 8b8d706dfdff             MOV ECX, [RBP-0x29290]
+40181d (03) c1e910                   SHR ECX, 0x10
+401820 (02) 89ce                     MOV ESI, ECX
+401822 (02) 89d1                     MOV ECX, EDX
+401824 (02) 89c2                     MOV EDX, EAX
+401826 (05) bfb41f4000               MOV EDI, 0x401fb4
+40182b (05) b800000000               MOV EAX, 0x0
+401830 (05) e8bbf4ffff               CALL 0xfffffffffffffcfc
+401835 (07) 4c8d85a06efdff           LEA R8, [RBP-0x29160]
+40183c (06) 8b8d746dfdff             MOV ECX, [RBP-0x2928c]
+401842 (06) 8b955c6dfdff             MOV EDX, [RBP-0x292a4]
+401848 (07) 488bb5a86dfdff           MOV RSI, [RBP-0x29258]
+40184f (07) 488b85a06dfdff           MOV RAX, [RBP-0x29260]
+401856 (07) 488dbd506dfdff           LEA RDI, [RBP-0x292b0]
+40185d (04) 48893c24                 MOV [RSP], RDI
+401861 (06) 41b9e8030000             MOV R9D, 0x3e8
+401867 (03) 4889c7                   MOV RDI, RAX
+40186a (05) e881f5ffff               CALL 0xfffffffffffffdfc
+40186f (06) 8985786dfdff             MOV [RBP-0x29288], EAX
+401875 (07) 83bd786dfdff03           CMP DWORD [RBP-0x29288], 0x3
+40187c (02) 7523                     JNZ 0x8ad
+40187e (07) 488b0593182000           MOV RAX, [RIP+0x201893]
+401885 (03) 4889c1                   MOV RCX, RAX
+401888 (05) ba16000000               MOV EDX, 0x16
+40188d (05) be01000000               MOV ESI, 0x1
+401892 (05) bfcf1f4000               MOV EDI, 0x401fcf
+401897 (05) e8b4f5ffff               CALL 0xfffffffffffffe5c
+40189c (05) e966020000               JMP 0xb13
+4018a1 (10) c785586dfdff00000000     MOV DWORD [RBP-0x292a8], 0x0
+4018ab (05) e959010000               JMP 0xa15
+4018b0 (07) 488d8da06efdff           LEA RCX, [RBP-0x29160]
+4018b7 (06) 8b85586dfdff             MOV EAX, [RBP-0x292a8]
+4018bd (03) 4863d0                   MOVSXD RDX, EAX
+4018c0 (03) 4889d0                   MOV RAX, RDX
+4018c3 (04) 48c1e002                 SHL RAX, 0x2
+4018c7 (03) 4801d0                   ADD RAX, RDX
+4018ca (04) 48c1e002                 SHL RAX, 0x2
+4018ce (03) 4801d0                   ADD RAX, RDX
+4018d1 (04) 48c1e003                 SHL RAX, 0x3
+4018d5 (04) 4883c030                 ADD RAX, 0x30
+4018d9 (03) 4801c8                   ADD RAX, RCX
+4018dc (04) 488d7808                 LEA RDI, [RAX+0x8]
+4018e0 (06) 8b85586dfdff             MOV EAX, [RBP-0x292a8]
+4018e6 (03) 4863d0                   MOVSXD RDX, EAX
+4018e9 (03) 4889d0                   MOV RAX, RDX
+4018ec (04) 48c1e002                 SHL RAX, 0x2
+4018f0 (03) 4801d0                   ADD RAX, RDX
+4018f3 (04) 48c1e002                 SHL RAX, 0x2
+4018f7 (03) 4801d0                   ADD RAX, RDX
+4018fa (04) 48c1e003                 SHL RAX, 0x3
+4018fe (04) 488d5df0                 LEA RBX, [RBP-0x10]
+401902 (03) 4801d8                   ADD RAX, RBX
+401905 (06) 482d20910200             SUB RAX, 0x29120
+40190b (03) 8b4004                   MOV EAX, [RAX+0x4]
+40190e (02) 85c0                     TEST EAX, EAX
+401910 (02) 7407                     JZ 0x925
+401912 (05) b9e61f4000               MOV ECX, 0x401fe6
+401917 (02) eb05                     JMP 0x92a
+401919 (05) b9e81f4000               MOV ECX, 0x401fe8
+40191e (07) 488db5a06efdff           LEA RSI, [RBP-0x29160]
+401925 (06) 8b85586dfdff             MOV EAX, [RBP-0x292a8]
+40192b (03) 4863d0                   MOVSXD RDX, EAX
+40192e (03) 4889d0                   MOV RAX, RDX
+401931 (04) 48c1e002                 SHL RAX, 0x2
+401935 (03) 4801d0                   ADD RAX, RDX
+401938 (04) 48c1e002                 SHL RAX, 0x2
+40193c (03) 4801d0                   ADD RAX, RDX
+40193f (04) 48c1e003                 SHL RAX, 0x3
+401943 (03) 4801f0                   ADD RAX, RSI
+401946 (04) 4c8d4804                 LEA R9, [RAX+0x4]
+40194a (07) 488db5a06efdff           LEA RSI, [RBP-0x29160]
+401951 (06) 8b85586dfdff             MOV EAX, [RBP-0x292a8]
+401957 (03) 4863d0                   MOVSXD RDX, EAX
+40195a (03) 4889d0                   MOV RAX, RDX
+40195d (04) 48c1e002                 SHL RAX, 0x2
+401961 (03) 4801d0                   ADD RAX, RDX
+401964 (04) 48c1e002                 SHL RAX, 0x2
+401968 (03) 4801d0                   ADD RAX, RDX
+40196b (04) 48c1e003                 SHL RAX, 0x3
+40196f (04) 4883c060                 ADD RAX, 0x60
+401973 (03) 4801f0                   ADD RAX, RSI
+401976 (04) 4c8d400c                 LEA R8, [RAX+0xc]
+40197a (06) 8b85586dfdff             MOV EAX, [RBP-0x292a8]
+401980 (03) 4863d0                   MOVSXD RDX, EAX
+401983 (03) 4889d0                   MOV RAX, RDX
+401986 (04) 48c1e002                 SHL RAX, 0x2
+40198a (03) 4801d0                   ADD RAX, RDX
+40198d (04) 48c1e002                 SHL RAX, 0x2
+401991 (03) 4801d0                   ADD RAX, RDX
+401994 (04) 48c1e003                 SHL RAX, 0x3
+401998 (04) 488d5df0                 LEA RBX, [RBP-0x10]
+40199c (03) 4801d8                   ADD RAX, RBX
+40199f (06) 482dc0900200             SUB RAX, 0x290c0
+4019a5 (03) 8b700c                   MOV ESI, [RAX+0xc]
+4019a8 (06) 8b85586dfdff             MOV EAX, [RBP-0x292a8]
+4019ae (03) 4863d0                   MOVSXD RDX, EAX
+4019b1 (03) 4889d0                   MOV RAX, RDX
+4019b4 (04) 48c1e002                 SHL RAX, 0x2
+4019b8 (03) 4801d0                   ADD RAX, RDX
+4019bb (04) 48c1e002                 SHL RAX, 0x2
+4019bf (03) 4801d0                   ADD RAX, RDX
+4019c2 (04) 48c1e003                 SHL RAX, 0x3
+4019c6 (04) 488d5df0                 LEA RBX, [RBP-0x10]
+4019ca (03) 4801d8                   ADD RAX, RBX
+4019cd (06) 482db0900200             SUB RAX, 0x290b0
+4019d3 (03) 488b10                   MOV RDX, [RAX]
+4019d6 (07) 488b85a86dfdff           MOV RAX, [RBP-0x29258]
+4019dd (03) 4801c2                   ADD RDX, RAX
+4019e0 (06) 8b85746dfdff             MOV EAX, [RBP-0x2928c]
+4019e6 (05) 48897c2408               MOV [RSP+0x8], RDI
+4019eb (04) 48890c24                 MOV [RSP], RCX
+4019ef (02) 89f1                     MOV ECX, ESI
+4019f1 (02) 89c6                     MOV ESI, EAX
+4019f3 (05) bfe91f4000               MOV EDI, 0x401fe9
+4019f8 (05) b800000000               MOV EAX, 0x0
+4019fd (05) e8eef2ffff               CALL 0xfffffffffffffcfc
+401a02 (07) 8385586dfdff01           ADD DWORD [RBP-0x292a8], 0x1
+401a09 (06) 8b95586dfdff             MOV EDX, [RBP-0x292a8]
+401a0f (06) 8b85506dfdff             MOV EAX, [RBP-0x292b0]
+401a15 (02) 39c2                     CMP EDX, EAX
+401a17 (06) 0f8293feffff             JB 0x8bc
+401a1d (07) 83bd786dfdff01           CMP DWORD [RBP-0x29288], 0x1
+401a24 (02) 7505                     JNZ 0xa37
+401a26 (05) e9b9000000               JMP 0xaf0
+401a2b (06) 8b85506dfdff             MOV EAX, [RBP-0x292b0]
+401a31 (02) 85c0                     TEST EAX, EAX
+401a33 (02) 7505                     JNZ 0xa46
+401a35 (05) e9aa000000               JMP 0xaf0
+401a3a (06) 8b85506dfdff             MOV EAX, [RBP-0x292b0]
+401a40 (03) 83e801                   SUB EAX, 0x1
+401a43 (02) 89c2                     MOV EDX, EAX
+401a45 (03) 4889d0                   MOV RAX, RDX
+401a48 (04) 48c1e002                 SHL RAX, 0x2
+401a4c (03) 4801d0                   ADD RAX, RDX
+401a4f (04) 48c1e002                 SHL RAX, 0x2
+401a53 (03) 4801d0                   ADD RAX, RDX
+401a56 (04) 48c1e003                 SHL RAX, 0x3
+401a5a (04) 488d5df0                 LEA RBX, [RBP-0x10]
+401a5e (03) 4801d8                   ADD RAX, RBX
+401a61 (06) 482db0900200             SUB RAX, 0x290b0
+401a67 (03) 488b00                   MOV RAX, [RAX]
+401a6a (02) 89c2                     MOV EDX, EAX
+401a6c (07) 488b85a06dfdff           MOV RAX, [RBP-0x29260]
+401a73 (02) 29c2                     SUB EDX, EAX
+401a75 (02) 89d0                     MOV EAX, EDX
+401a77 (06) 89857c6dfdff             MOV [RBP-0x29284], EAX
+401a7d (06) 8b85506dfdff             MOV EAX, [RBP-0x292b0]
+401a83 (03) 83e801                   SUB EAX, 0x1
+401a86 (02) 89c2                     MOV EDX, EAX
+401a88 (03) 4889d0                   MOV RAX, RDX
+401a8b (04) 48c1e002                 SHL RAX, 0x2
+401a8f (03) 4801d0                   ADD RAX, RDX
+401a92 (04) 48c1e002                 SHL RAX, 0x2
+401a96 (03) 4801d0                   ADD RAX, RDX
+401a99 (04) 48c1e003                 SHL RAX, 0x3
+401a9d (04) 488d5df0                 LEA RBX, [RBP-0x10]
+401aa1 (03) 4801d8                   ADD RAX, RBX
+401aa4 (06) 482dc0900200             SUB RAX, 0x290c0
+401aaa (03) 8b400c                   MOV EAX, [RAX+0xc]
+401aad (06) 01857c6dfdff             ADD [RBP-0x29284], EAX
+401ab3 (06) 8b857c6dfdff             MOV EAX, [RBP-0x29284]
+401ab9 (07) 480185a86dfdff           ADD [RBP-0x29258], RAX
+401ac0 (06) 8b855c6dfdff             MOV EAX, [RBP-0x292a4]
+401ac6 (06) 2b857c6dfdff             SUB EAX, [RBP-0x29284]
+401acc (06) 89855c6dfdff             MOV [RBP-0x292a4], EAX
+401ad2 (06) 8b857c6dfdff             MOV EAX, [RBP-0x29284]
+401ad8 (07) 480185a06dfdff           ADD [RBP-0x29260], RAX
+401adf (05) e951fdffff               JMP 0x841
+401ae4 (07) 8385546dfdff01           ADD DWORD [RBP-0x292ac], 0x1
+401aeb (06) 8b95546dfdff             MOV EDX, [RBP-0x292ac]
+401af1 (07) 488b0530162000           MOV RAX, [RIP+0x201630]
+401af8 (03) 8b4008                   MOV EAX, [RAX+0x8]
+401afb (03) 83e801                   SUB EAX, 0x1
+401afe (02) 39c2                     CMP EDX, EAX
+401b00 (06) 0f82f6fbffff             JB 0x708
+401b06 (01) 90                       NOP
+401b07 (04) 488b45e8                 MOV RAX, [RBP-0x18]
+401b0b (09) 644833042528000000       XOR RAX, [FS:0x28]
+401b14 (02) 7405                     JZ 0xb27
+401b16 (05) e8c5f1ffff               CALL 0xfffffffffffffcec
+401b1b (07) 4881c4b8920200           ADD RSP, 0x292b8
+401b22 (01) 5b                       POP RBX
+401b23 (01) 5d                       POP RBP
+401b24 (01) c3                       RET
+401b25 (10) 662e0f1f840000000000     NOP WORD [RAX+RAX+0x0]
+401b2f (01) 90                       NOP
+Valore func_array->len: 13Posizione : 9 Address : 0x401b30 lunghezzaBuffer : 144 start: 0x401b30 end 0x401bc0 
+diStorm version: 3.3.0
+401b30 (05) 48896c24d8               MOV [RSP-0x28], RBP
+401b35 (05) 4c896424e0               MOV [RSP-0x20], R12
+401b3a (07) 488d2da7122000           LEA RBP, [RIP+0x2012a7]
+401b41 (07) 4c8d2598122000           LEA R12, [RIP+0x201298]
+401b48 (05) 48895c24d0               MOV [RSP-0x30], RBX
+401b4d (05) 4c896c24e8               MOV [RSP-0x18], R13
+401b52 (05) 4c897424f0               MOV [RSP-0x10], R14
+401b57 (05) 4c897c24f8               MOV [RSP-0x8], R15
+401b5c (04) 4883ec38                 SUB RSP, 0x38
+401b60 (03) 4c29e5                   SUB RBP, R12
+401b63 (03) 4189ff                   MOV R15D, EDI
+401b66 (03) 4989f6                   MOV R14, RSI
+401b69 (04) 48c1fd03                 SAR RBP, 0x3
+401b6d (03) 4989d5                   MOV R13, RDX
+401b70 (02) 31db                     XOR EBX, EBX
+401b72 (05) e8e9f0ffff               CALL 0xfffffffffffff130
+401b77 (03) 4885ed                   TEST RBP, RBP
+401b7a (02) 741a                     JZ 0x66
+401b7c (04) 0f1f4000                 NOP DWORD [RAX+0x0]
+401b80 (03) 4c89ea                   MOV RDX, R13
+401b83 (03) 4c89f6                   MOV RSI, R14
+401b86 (03) 4489ff                   MOV EDI, R15D
+401b89 (04) 41ff14dc                 CALL QWORD [R12+RBX*8]
+401b8d (04) 4883c301                 ADD RBX, 0x1
+401b91 (03) 4839eb                   CMP RBX, RBP
+401b94 (02) 75ea                     JNZ 0x50
+401b96 (05) 488b5c2408               MOV RBX, [RSP+0x8]
+401b9b (05) 488b6c2410               MOV RBP, [RSP+0x10]
+401ba0 (05) 4c8b642418               MOV R12, [RSP+0x18]
+401ba5 (05) 4c8b6c2420               MOV R13, [RSP+0x20]
+401baa (05) 4c8b742428               MOV R14, [RSP+0x28]
+401baf (05) 4c8b7c2430               MOV R15, [RSP+0x30]
+401bb4 (04) 4883c438                 ADD RSP, 0x38
+401bb8 (01) c3                       RET
+401bb9 (07) 0f1f8000000000           NOP DWORD [RAX+0x0]
+Valore func_array->len: 13Posizione : 10 Address : 0x401bc0 lunghezzaBuffer : 16 start: 0x401bc0 end 0x401bd0 
+diStorm version: 3.3.0
+401bc0 (02) f3c3                     RET
+401bc2 (10) 662e0f1f840000000000     NOP WORD [RAX+RAX+0x0]
+401bcc (04) 0f1f4000                 NOP DWORD [RAX+0x0]
+Valore func_array->len: 13Posizione : 11 Address : 0x401bd0 lunghezzaBuffer : 16 start: 0x401bd0 end 0x401be0 
+diStorm version: 3.3.0
+401bd0 (03) 4889f2                   MOV RDX, RSI
+401bd3 (02) 89fe                     MOV ESI, EDI
+401bd5 (05) bf01000000               MOV EDI, 0x1
+401bda (05) e9f1f1ffff               JMP 0xfffffffffffff200
+401bdf (01) 00                       DB 0x0
+Valore func_array->len: 13Posizione : 12 Address : 0x401be0 lunghezzaBuffer : 9 start: 0x401be0 end 0x401be9 
+diStorm version: 3.3.0
+401be0 (04) 4883ec08                 SUB RSP, 0x8
+401be4 (04) 4883c408                 ADD RSP, 0x8
+401be8 (01) c3                       RET
