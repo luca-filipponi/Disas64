@@ -1,0 +1,12 @@
+
+
+Libraria per la memoria reattiva a 64 bit.
+
+
+Per funzionare sono necessari:
+
+Libreria di distorm in usr/local/lib, nella compilazione aggiungere -libdistorm3
+(scaricare il sorgente di distorm3 seguire le istruzioni per compilare e installare la librearia)
+
+Libelf, che serve per il processamento del file elf
+sudo apt-get install libelf-dev e nella compilazione dei test aggiungere -lelf
